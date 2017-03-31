@@ -1,4 +1,3 @@
-markup---
 jobs:  
 - name: build-docker-image
   public: true
@@ -14,9 +13,7 @@ resources:
 - name: git-concourse-build-docker-image
   type: git
   source:
-    uri: git repo uri
-    branch: master
-    private_key: {{github-private-key}}
+    uri: https://github.com/premroxx/Concourse-Build-Docker-Image.git
 
 - name: docker-image
   type: docker-image
